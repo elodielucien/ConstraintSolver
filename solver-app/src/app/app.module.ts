@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
 import { OutputComponent } from './output/output.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { OutputComponent } from './output/output.component';
     OutputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

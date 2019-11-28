@@ -1,1 +1,22 @@
-<p>input works!</p>
+<div>
+        <form [formGroup] = "form" (ngSubmit)="onSubmit()">
+            <div>
+                <label>Mot 1</label>
+                <input type="text" formControlName = "firstInput"> 
+            </div>
+
+            <div>
+                <label>Mot 2</label>
+                <input type="text" formControlName = "secondInput"> 
+            </div>
+
+            <div>
+                <label>Résultat</label>
+                <input type="text" formControlName = "thirdInput"> 
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+
+</div>
+
