@@ -6,6 +6,15 @@ import { InputComponent } from './input/input.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
 import { OutputComponent } from './output/output.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+ 
+
+const appRoutes: Routes = [
+  { path: 'input', component: InputComponent },
+  { path: 'puzzle',      component: PuzzleComponent },
+  { path: 'output',      component: OutputComponent }
+];
 
 
 @NgModule({
@@ -17,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],

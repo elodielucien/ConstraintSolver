@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InputObject } from '../inputObject';
 
 @Component({
   selector: 'app-puzzle',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PuzzleComponent implements OnInit {
 
+  inputObject : InputObject;
+
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
